@@ -1,5 +1,4 @@
 function setupFlip() {
-    console.log("working?");
 
     // set up hover panels
     // although this can be done without JavaScript, we've attached these events
