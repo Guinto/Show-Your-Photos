@@ -1,0 +1,128 @@
+<html>
+<head>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" />
+    <script src="js/modernizr.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>   
+    <link href="css/flip.css" rel="stylesheets" />
+    <script src="js/flip.js"></script>
+
+	<script type="text/javascript">
+    $(function(){
+        console.log("yo");
+        setupFlip();
+    }
+	</script>
+</head>
+
+<body>
+
+	<h1><a href="http://css3playground.com">css3</a></h1>
+	
+	<p class="instructions">
+	 These cards are using <code>-webkit-transform: rotateY() and rotateX();</code> with some of the 3D settings:
+	 <code>-webkit-transform-style: preserve3d;</code> and <code>-webkit-transform-perspective</code>.<br>
+	 Mozilla browsers are using the <code>-moz-transform</code> equivalents.
+	</p>
+
+	<div class="hover panel">
+		<div class="front">
+		  <div class="pad">
+        <h2>Mouse Over Me!</h2>
+        <p>
+          The effect on this box can be done using 100% CSS.<br><br>
+          The other boxes all require some Javascript, but the animation is driven by CSS3.
+        </p>
+			</div>
+		</div>
+		<div class="back">
+			<div class="pad">
+				<h2>check you on the flip side</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="contact panel">
+		<div class="front">
+			<h3>Contact Us</h3>
+			<address>
+				Acme, Co.<br />
+				123 Easy St.<br />
+				Austin, TX 78731
+			</address>
+			<p>Or <a class="action" href="#form">send us a message</a>
+		</div>
+		<div class="back" id="contact">
+			<div class="pad">
+				<h3>Send us a Fake Message</h3>
+				<form action="###" method="post">
+					<p><label for="f-name">Name:</label><input id="f-name" name="f-name" type="text" /></p>
+					<p><label for="f-email">Email:</label><input id="f-email" name="f-email" type="text" /></p>
+					<p><label for="f-how">How did you find us?</label><select id="f-how" name="f-how"><option value="">- Pick an Option -</option><option value="internet">Internet</option></select></p>
+					<p><label for="f-msg">Message:</label><textarea id="f-msg" name="f-msg"></textarea></p>
+					<input type="submit" class="edit-submit" value="Fake Send Message" />
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="click panel circle">
+		<div class="front">
+			<h2>Click or tap this circle!</h2>
+		</div>
+		<div class="back">
+			<h2>Tap Again!</h2>
+		</div>
+	</div>
+
+	<div class="block panel">
+		<div class="front">
+			<a class="action">Configure Block</a>
+			<h2 id="list-title">Top Sellers</h2>
+			<ol id="list-items">
+				<li>Name 1</li>
+				<li>Name 2</li>
+				<li>Name 3</li>
+			</ol>
+		</div>
+		<div class="back">
+			<div class="pad">
+				<form action="###" method="post">
+					<h3>Edit List</h3>
+					<p><input type="text" name="form_title" id="form_title" value="Top Sellers" /></p>
+					<p>Display <select name="form_items" id="form_items"><option value="1">1</option><option value="2">2</option><option value="3" selected="selected">3</option><option value="4">4</option><option value="5">5</option></select> items</p>
+					<input type="submit" class="edit-submit" value="Save Changes" />
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="click diagonal panel">
+		<div class="front">
+			<h2><br>
+			Click or tap for<br>
+			Diagonal Rotation</h2>
+			<p class="message">woahdude</p>
+		</div>
+		<div class="back">
+			<div class="pad">
+				<h2>like a diamond in the rough</h2>
+				<p><small>yes, I'm a little crooked</small></p>
+			</div>
+		</div>
+	</div>
+
+  <div class="click swing panel">
+    <div class="front">
+      <h2>Swing like a gate</h2>
+    </div>
+    <div class="back">
+      <div class="pad">
+      <h2>Any axis is possible</h2>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
