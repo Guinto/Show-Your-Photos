@@ -1,4 +1,3 @@
-body {width: 720px; }
 .panel {
 	width: 200px;
 	height: 200px;
@@ -20,7 +19,7 @@ body {width: 720px; }
 	width: inherit;
 	height: inherit;
 	border: 1px solid #ccc;
-	background: #6b7077;
+	background: #eee;
 	text-align: center;
 
 	-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.9);
@@ -45,7 +44,7 @@ body {width: 720px; }
 .panel.flip .front {
 	z-index: 900;
 	border-color: #eee;
-	background: #333;
+    background: #eee;
 
 	-webkit-transform: rotateY(180deg);
 	-moz-transform: rotateY(180deg);
@@ -64,7 +63,7 @@ body {width: 720px; }
 	width: inherit;
 	height: inherit;
 	border: 1px solid #ccc;
-	background: #333;
+    background: #eee;
 	text-shadow: 1px  1px 1px rgba(0,0,0,0.6); 
 	
 	-webkit-transform: rotateY(-180deg);
@@ -85,7 +84,7 @@ body {width: 720px; }
 
 .panel.flip .back {
 	z-index: 1000;
-	background: #80868d;
+    background: #eee;
 
 	-webkit-transform: rotateX(0deg) rotateY(0deg);
 	-moz-transform: rotateX(0deg) rotateY(0deg);
