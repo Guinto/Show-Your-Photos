@@ -36,19 +36,19 @@ function makeBack(id) {
 	$("<div/>", {
 		"class": "back",
 		"id": id + "back"
-	}).appendTo("#" + id);
+	}).appendTo("#photo" + id);
 }
 
 function makeFront(id) {
 	$("<div/>", {
 		"class": "front",
 		"id": id + "front"
-	}).appendTo("#" + id);
+	}).appendTo("#photo" + id);
 }
 
 function makeHoverPanel(id) {
 	$("<div/>", {
-		"class": "hover panel",
-		"id": id
+		"class": "panel flip",
+		"id": "photo" + id
 	}).appendTo(".container");
 }
