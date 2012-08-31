@@ -1,6 +1,11 @@
+.panel img {
+	max-width: none;
+}
+
 .panel {
-	width: 200px;
-	height: 200px;
+	display: inline-block;
+	width: 240px;
+	height: 240px;
 	margin: 20px;
 	position: relative;
 	font-size: .8em;
@@ -11,6 +16,7 @@
 /* -- make sure to declare a default for every property that you want animated -- */
 /* -- general styles, including Y axis rotation -- */
 .panel .front {
+	overflow:hidden;
 	float: none;
 	position: absolute;
 	top: 0;
@@ -18,7 +24,7 @@
 	z-index: 900;
 	width: inherit;
 	height: inherit;
-	border: 1px solid #ccc;
+	/*border: 1px solid #ccc;*/
 	background: #eee;
 	text-align: center;
 
@@ -43,7 +49,7 @@
 }
 .panel.flip .front {
 	z-index: 900;
-	border-color: #eee;
+	/*border-color: #eee;*/
     background: #eee;
 
 	-webkit-transform: rotateY(180deg);
@@ -55,6 +61,7 @@
 }
 
 .panel .back {
+	overflow:hidden;
 	float: none;
 	position: absolute;
 	top: 0;
@@ -62,7 +69,7 @@
 	z-index: 800;
 	width: inherit;
 	height: inherit;
-	border: 1px solid #ccc;
+	/*border: 1px solid #ccc;*/
     background: #eee;
 	text-shadow: 1px  1px 1px rgba(0,0,0,0.6); 
 	
